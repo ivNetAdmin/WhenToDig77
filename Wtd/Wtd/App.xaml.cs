@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 using Xamarin.Forms;
 
 namespace Wtd
@@ -13,8 +9,9 @@ namespace Wtd
 		{
 			InitializeComponent();
 
-			MainPage = new Wtd.MainPage();
-		}
+            //MainPage = new Wtd.MainPage();
+            MainPage = new NavigationPage(new PCL.Views.CalendarPage());
+        }
 
 		protected override void OnStart ()
 		{
